@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/startStop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startPauseStop"
+        android:text="@string/start" />
+	<!-- 
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showInfo"
+        android:text="showInfo" />
+ 	-->
+ 	
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.baidu.mapapi.map.MapView android:id="@+id/bmapsView"  
+                    android:layout_width="fill_parent"  
+                    android:layout_height="fill_parent"  
+                    android:clickable="true" />
+
+</LinearLayout>
